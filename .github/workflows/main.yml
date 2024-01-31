@@ -1,0 +1,17 @@
+name: Hello and Bye World
+
+on: [push]
+
+jobs:
+  hello_and_bye:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Hello World
+      run: echo "Hello, world!"
+
+    - name: Wait for 1 hour
+      run: sleep 1h
+
+    - name: Bye World
+      run: echo "Bye, world!"
